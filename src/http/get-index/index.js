@@ -3,7 +3,9 @@ let data = require('@begin/data')
 
 
 exports.handler = async function http (req) {
+  let result = await data.get({table: "movies"})
 
+  console.log("initial data: ", result)
 
   let form = `<h1>Praise Cage</h1>
     <form action="/votes/001/upvote" method=post>
@@ -28,6 +30,7 @@ exports.handler = async function http (req) {
     <button>Downvote</button>
     </form>
 
+    <pre>${JSON.stringify(result)}</pre>
     `
 
   return {
