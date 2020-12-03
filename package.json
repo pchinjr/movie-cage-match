@@ -1,0 +1,17 @@
+{
+  "name": "cage-movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "arc sandbox",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@architect/sandbox": "^3.2.1",
+    "@begin/data": "^1.2.3"
+  }
+}
