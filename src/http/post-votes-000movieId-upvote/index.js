@@ -10,7 +10,6 @@ async function route(req) {
   console.log("votes incremented to", incr)
   return {
     statusCode: 301,
-    location: '/',
-    body: JSON.stringify({ok: true})
+    location: '/'
   }
 }
