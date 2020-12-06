@@ -5,33 +5,24 @@ let data = require('@begin/data')
 exports.handler = async function http (req) {
   let result = await data.get({table: "movies"})
 
-  result.map(item => console.log(item))
-
-  let movies = [
-    {key: '001', table: 'movies'},
-    {key: '002', table: 'movies'},
-    {key: '003', table: 'movies'}
-  ]
-
-
   let form = `<h1>Praise Cage</h1>
-    <form action="/votes/001/upvote" method=post>
+    <form action="/upvote" method=post>
     MOVIE_ID:001
     <input type=hidden name=movieId value=001>
     <button>Upvote</button>
     </form>
-    <form action="/votes/001/downvote" method=post>
+    <form action="/downvote" method=post>
     MOVIE_ID:001
     <input type=hidden name=movieId value=001>
     <button>Downvote</button>
     </form>
 
-    <form action="/votes/002/upvote" method=post>
+    <form action="/upvote" method=post>
     MOVIE_ID:002
     <input type=hidden name=movieId value=002>
     <button>Upvote</button>
     </form>
-    <form action="/votes/002/downvote" method=post>
+    <form action="/downvote" method=post>
     MOVIE_ID:002
     <input type=hidden name=movieId value=002>
     <button>Downvote</button>

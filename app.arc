@@ -7,8 +7,8 @@ get /
 get /movies
 get /movies/:movieId
 post /movies/:movieId
-post /votes/:movieId/upvote
-post /votes/:movieId/downvote
+post /upvote
+post /downvote
 
 @tables
 data
